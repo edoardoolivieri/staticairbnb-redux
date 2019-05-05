@@ -10,11 +10,18 @@ import Flat from '../components/flat';
 class FlatList extends Component {
 
    // TEMPORARY CODE TO INTEGRATE HTML
-
+  static defaultProps = {
+   flats: [{
+    "name": "Charm at the Steps of Montmartre",
+    "imageUrl": "https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/images/flat1.jpg",
+    "price": 164,
+    "priceCurrency": "GBP"
+    }]
+  }
 
   componentWillMount() {
   // TODO: dispatch an action to load flats!
-    this.props.setFlats();
+    this.props.setFlats()
   }
 
   render() {
@@ -28,7 +35,7 @@ class FlatList extends Component {
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
-    { setFlats },
+    { setFlats: setFlats },
     dispatch
   );
 }
