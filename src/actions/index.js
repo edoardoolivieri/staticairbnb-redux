@@ -6,10 +6,3 @@ export function setFlats() {
     payload: flats
   };
 }
-
-export function selectFlat(flat) {
-  return {
-    type: "SELECT_FLAT",
-    payload: flat
-  };
-}
