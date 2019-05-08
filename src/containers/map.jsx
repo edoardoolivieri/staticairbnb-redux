@@ -29,7 +29,7 @@ class Map extends Component {
 
 
     return (
-      <div className="col-sm-5" style={{height: '100vh'}}>
+      <div className="col-sm-5" style={{ height: '100vh' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyBfIs71nrmFiErtr8jaLRO1Wg5m48cR8Ac" }}
           center={center}

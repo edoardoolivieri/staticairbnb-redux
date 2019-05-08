@@ -8,9 +8,40 @@ body {
 }
 
 .flat{
-  flex: 50% 0 0;
-  cursor: pointer;
-  border: 6px solid transparent;
+    flex: 50% 0 0;
+    cursor: pointer;
+    margin: 5px;
+    /* border: 6px solid transparent; */
+}
+@media (min-width: 100px) and (max-width: 575px) {
+  .flat {
+    flex: 40% 0 0;
+  }
+}
+
+
+@media (min-width: 576px) {
+  .flat {
+    flex: 48% 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .flat {
+    flex: 47% 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .flat {
+    flex: 45% 0 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .flat {
+    flex: 49% 0 0;
+  }
 }
 
 @import "card";
