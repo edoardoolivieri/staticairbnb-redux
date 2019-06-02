@@ -3,7 +3,7 @@ body {
 }
 
 .flat-list {
- display: flex;
+
  flex-wrap: wrap;
 }
 
@@ -45,3 +45,9 @@ body {
 }
 
 @import "card";
+
+.map{
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
